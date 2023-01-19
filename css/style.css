@@ -64,7 +64,6 @@ textarea {
 
 .heading-primary {
   font-size: 6rem;
-  text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center; }
   @media only screen and (max-width: 37.5em) {
@@ -273,6 +272,35 @@ textarea {
         font-weight: 700;
         margin: 0 3px; }
       .about__content-details-para:last-child {
+        margin-bottom: 4rem; }
+
+.education {
+  background: #fafafa; }
+  .education__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem; }
+    @media only screen and (max-width: 56.25em) {
+      .education__content {
+        grid-template-columns: 1fr;
+        grid-gap: 8rem; } }
+    .education__content-title {
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 3rem; }
+      @media only screen and (max-width: 37.5em) {
+        .education__content-title {
+          font-size: 2.4rem; } }
+    .education__content-details-para {
+      font-size: 1.8rem;
+      color: grey;
+      max-width: 60rem;
+      line-height: 1.7;
+      margin-bottom: 1rem; }
+      .education__content-details-para--hl {
+        font-weight: 700;
+        margin: 0 3px; }
+      .education__content-details-para:last-child {
         margin-bottom: 4rem; }
 
 .projects__row {
@@ -663,6 +691,19 @@ textarea {
   display: flex;
   flex-wrap: wrap; }
   .skills__skill {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #777; }
+
+.classes {
+  display: flex;
+  flex-wrap: wrap; }
+  .classes__classes {
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
