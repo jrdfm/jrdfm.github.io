@@ -102,7 +102,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #CC472B;
+    background: #e03915;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -127,7 +127,6 @@ textarea {
 
 .heading-sm {
   font-size: 2.2rem;
-  text-transform: uppercase;
   letter-spacing: 1px; }
 
 .main-container {
@@ -153,13 +152,19 @@ textarea {
   .btn--med {
     padding: 1.5rem 5rem;
     font-size: 1.6rem; }
+  .btn--sm {
+    padding: 0.75rem 3rem;
+    font-size: 1.2rem; }
   .btn--theme {
-    background: #CC472B;
+    background: #e03915;
+    color: #fff; }
+  .btn--drk {
+    background: #a2341c;
     color: #fff; }
   .btn--theme-inv {
-    color: #CC472B;
+    color: #e03915;
     background: #fff;
-    border: 2px solid #CC472B;
+    border: 2px solid #e03915;
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
 
@@ -184,7 +189,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(204, 71, 43, 0.8), rgba(204, 71, 43, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(224, 57, 21, 0.8), rgba(224, 57, 21, 0.8)), url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -302,46 +307,29 @@ textarea {
         margin: 0 3px; }
       .education__content-details-para:last-child {
         margin-bottom: 4rem; }
-/*         
-.education {
-  background: #fafafa; }
-  .education__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem; }
-    @media only screen and (max-width: 56.25em) {
-      .education__content {
-        grid-template-columns: 1fr;
-        grid-gap: 8rem; } }
-    .education__content-title {
-      font-weight: 700;
-      font-size: 2.8rem;
-      margin-bottom: 3rem; }
-      @media only screen and (max-width: 37.5em) {
-        .education__content-title {
-          font-size: 2.4rem; } }
-    .education__content-details-para {
-      font-size: 1.8rem;
-      color: grey;
-      max-width: 60rem;
-      line-height: 1.7;
-      margin-bottom: 1rem; }
-      .education__content-details-para--hl {
-        font-weight: 700;
-        margin: 0 3px; }
-      .education__content-details-para:last-child {
-        margin-bottom: 4rem; } */
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px; }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .projects__row {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  grid-gap: 5rem;
-  margin-bottom: 11rem; }
+  grid-gap: 3rem;
+  margin-bottom: 3rem; }
   @media only screen and (max-width: 56.25em) {
     .projects__row {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
-      margin-bottom: 8rem; } }
+      margin-bottom: 4rem; } }
   @media only screen and (max-width: 56.25em) {
     .projects__row {
       text-align: center; } }
@@ -379,8 +367,14 @@ textarea {
         .projects__row-content-desc {
           font-size: 1.7rem; } }
 
+.center {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  text-align: right; }
+
 .contact {
-  background: linear-gradient(to right, rgba(204, 71, 43, 0.8), rgba(204, 71, 43, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(224, 57, 21, 0.8), rgba(224, 57, 21, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center; }
   .contact__form-container {
@@ -461,7 +455,7 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(204, 71, 43, 0.8), rgba(204, 71, 43, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(224, 57, 21, 0.8), rgba(224, 57, 21, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -519,6 +513,21 @@ textarea {
     color: grey;
     margin-bottom: 2rem; }
 
+.project-details__features {
+  margin: 0 0 7rem 0; }
+  .project-details__features-list {
+    display: grid;
+    flex-wrap: wrap; }
+  .project-details__features-item {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #777; }
+
 .project-details__tools-used {
   margin: 0 0 7rem 0; }
   .project-details__tools-used-list {
@@ -572,14 +581,14 @@ textarea {
     color: #333;
     transition: color .3s; }
     .header__logo-container:hover {
-      color: #CC472B; }
+      color: #e03915; }
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: #CC472B; }
+    background: #e03915; }
     @media only screen and (max-width: 56.25em) {
       .header__logo-img-cont {
         width: 4.5rem;
@@ -593,7 +602,6 @@ textarea {
     display: block; }
   .header__logo-sub {
     font-size: 1.8rem;
-    text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px; }
   .header__links {
@@ -611,7 +619,7 @@ textarea {
     font-weight: 700;
     transition: color .3s; }
     .header__link:hover {
-      color: #CC472B; }
+      color: #e03915; }
     @media only screen and (max-width: 56.25em) {
       .header__link {
         padding: 3rem 1.8rem;
@@ -658,7 +666,7 @@ textarea {
     letter-spacing: 2px;
     transition: color .3s; }
     .header__sm-menu-link a:hover {
-      color: #CC472B; }
+      color: #e03915; }
   .header__sm-menu-link:first-child a {
     border-top: 1px solid #eee; }
   .header__sm-menu-link-last {
@@ -725,6 +733,19 @@ textarea {
     margin-right: 1.5rem;
     font-size: 1.6rem;
     background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #777; }
+
+.features {
+  display: grid;
+  flex-wrap: wrap; }
+  .features__feat {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     font-weight: 600;
     color: #777; }

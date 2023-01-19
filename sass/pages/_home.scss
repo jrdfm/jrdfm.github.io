@@ -160,17 +160,32 @@
   }
 }
 
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .projects {
   &__row {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    grid-gap: 5rem;
-    margin-bottom: 11rem;
+    grid-gap: 3rem;
+    margin-bottom: 3rem;
 
     @include respond(tab-port) {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
-      margin-bottom: 8rem;
+      margin-bottom: 4rem;
     }
 
     @include respond(tab-port) {
@@ -220,6 +235,13 @@
       }
     }
   }
+}
+
+.center {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  text-align: right;
 }
 
 .contact {
