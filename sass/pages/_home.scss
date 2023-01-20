@@ -165,7 +165,12 @@
   float: left;
   width: 50%;
   padding: 10px;
+  height: 360px;  }
 
+.column_ {
+  float: left;
+  width: 50%;
+  padding: 10px; 
 }
 
 /* Clear floats after the columns */
@@ -241,6 +246,13 @@
   margin: auto;
   width: 80%;
   padding: 10px;
+  text-align: right;
+}
+
+.center_ {
+  margin: auto;
+  width: 10%;
+  padding: 11px;
   text-align: right;
 }
 
