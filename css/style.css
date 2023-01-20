@@ -158,9 +158,6 @@ textarea {
   .btn--theme {
     background: #e03915;
     color: #fff; }
-  .btn--drk {
-    background: #a2341c;
-    color: #fff; }
   .btn--theme-inv {
     color: #e03915;
     background: #fff;
@@ -312,8 +309,13 @@ textarea {
 .column {
   float: left;
   width: 50%;
-  padding: 10px; }
-
+  padding: 10px; 
+  height: 250px;   /*Should be removed. Only for demonstration */}
+ .column_ {
+  float: left;
+  width: 50%;
+  padding: 10px; 
+ /* height: 450px;  Should be removed. Only for demonstration */}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -340,8 +342,7 @@ textarea {
   .projects__row-img {
     width: 100%;
     display: block;
-    -o-object-fit: cover;
-       object-fit: cover; }
+    object-fit: cover; }
   .projects__row-content {
     padding: 2rem 0;
     display: flex;
@@ -420,14 +421,6 @@ textarea {
     /* Code for Microsoft Edge */
     /* Code for Mozilla Firefox 4 to 18 */
     /* Code for Mozilla Firefox 19+ */ }
-    .contact__form-input::-moz-placeholder {
-      color: #999;
-      font-weight: 600;
-      font-size: 1.6rem; }
-    .contact__form-input:-ms-input-placeholder {
-      color: #999;
-      font-weight: 600;
-      font-size: 1.6rem; }
     .contact__form-input::placeholder {
       color: #999;
       font-weight: 600;
@@ -507,7 +500,7 @@ textarea {
   margin-bottom: 6rem; }
 
 .project-details__showcase-img {
-  width: 60%; }
+  width: 70%; }
 
 .project-details__content-main {
   width: 100%;
@@ -606,10 +599,8 @@ textarea {
   .header__logo-img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
+    object-fit: cover;
+    object-position: center;
     display: block; }
   .header__logo-sub {
     font-size: 1.8rem;
@@ -804,4 +795,3 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
-
