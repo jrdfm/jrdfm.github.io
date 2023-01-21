@@ -120,37 +120,31 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                An all in one compiler and Interpreter that takes in a given Racket/Scheme expression, 
-                converts it to a list of tokens that will then be parsed to produce an abstract symbol tree,i.e AST, 
-                that can be interpreted in the Racket runtime or can be translated to x86-64 instruction set architecture and run 
-                using the C runtime. 
+                This project implements algorithms that work with regular expressions, NFAs and DFAs. It works by converting the input 
+                regular expression to Non-Deterministic Finite Automata (NFA) then the NFA is converted to a Deterministic Automata (DFA)
+                using the subset construction and the DFA and checked with the input string to see if it is matched.
               </p>
 
               <p class="project-details__desc-para">
-                It supports a subset of scheme including Primitives, Local Variables, Nested Binary Operations, Booleans, Branches and Dynamic Types
-                ,Functions, Tuples and Structures, & Lambdas and closures.
+                The interpreted is assembled from three parts. The first part simulates an NFA, part two implements an NFA to DFA converter and  
+                the last part converts a regular expression to an NFA.
               </p>
             </div>
 
             <div class="project-details__features">
               <h3 class="project-details__content-title">Features</h3>
               <div class="features">
-                <div class="features__feat">- Primitives, vectors, strings, variadic operations & syntax checking </div>
-                <div class="features__feat">- Inductively defined data types with cons and box</div>
-                <div class="features__feat">- Pattern matching </div>
-                <div class="features__feat">- Conditionals & Dispatch Evaluation with Cond and Case statements</div>
-                <div class="features__feat">- Binding for arbitrary number of expressions with let statements</div>
-                <div class="features__feat">- Functions with arity-checking, rest arguments, arity-based dispatch, and tail call support</div>
-                <div class="features__feat">- Lambda statements and Multiple returns</div>
+                <div class="features__feat">- Regular Expression to NFA converter </div>
+                <div class="features__feat">- NFA to DFA converter</div>
+                <div class="features__feat">- Accept function that runs DFA on the input string to check if its matched  </div>
+
 
               </div>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">Racket</div>
-                <div class="skills__skill">x86 Assembly</div>
-                <div class="skills__skill">C</div>           
+                <div class="skills__skill">OCaml</div>      
               </div>
             </div>
             <div class="project-details__links">
